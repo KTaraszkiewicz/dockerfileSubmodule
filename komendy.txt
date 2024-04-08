@@ -1,0 +1,6 @@
+//komendy do budowy i uruchomienia z dostępem do wybranego urządzenia
+
+//komendę uruchomić będąc w katalogu w którym znajduje się Dockerfile
+docker build -t wybrany_obraz .
+
+docker run -it --device=/dev/ttyprintk wybrany_obraz
